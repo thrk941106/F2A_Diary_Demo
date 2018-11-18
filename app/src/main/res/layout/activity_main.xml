@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/SHOW_ALL_DIARY_button"
+        android:text="일기 전체 보기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showListAct"/>
+
+    <Button
+        android:id="@+id/CREATE_DIARY_button"
+        android:text="일기 쓰기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showInsAct"/>
+
+</LinearLayout>
