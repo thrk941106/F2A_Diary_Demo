@@ -1,3 +1,4 @@
+// 일기 페이지
 package com.example.basic.diaryf2a;
 
 import android.content.Intent;
@@ -32,8 +33,10 @@ public class DiaryViewAct extends AppCompatActivity {
                 null
         );
         Intent i =getIntent();
-        String s = i.getStringExtra("id");
 
+
+        long s =i.getLongExtra("id", 0);
+        Log.d("d","##################################################"+s);
         Cursor c = db.rawQuery("SELECT * FROM Diary WHERE _id="+s+";", null);
         c.moveToNext();
 
@@ -41,7 +44,7 @@ public class DiaryViewAct extends AppCompatActivity {
         String date = c.getString(1);
         String main = c.getString(3);
 
-        Log.d("d","##################################################"+title);
+
         tv = (TextView) findViewById(R.id.SHOW_TITLE_Text);
         tv.setText(title);
 

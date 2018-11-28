@@ -1,3 +1,4 @@
+// 일기 쓰는 액티비티
 package com.example.basic.diaryf2a;
 
 import android.database.sqlite.SQLiteDatabase;
