@@ -1,0 +1,17 @@
+@Override
+    public void onListItemClick(ListView l, View v, int position, long id){
+     super.onListItemClick(l, v, position, id);
+     
+     //롱클릭시 리스너 동작
+     l.setOnItemLongClickListener(new OnItemLongClickListener(){
+         public boolean onItemLongClick(AdapterView<?> arg0, View v, int position, long id) {    
+                                  //source    
+                       return true;
+        }      
+      }
+     );
+    }
+
+3. //source에서 코드 처리하면된다.
+[출처] [안드로이드] ListActivity 에서 LongClick이벤트 적용하기|작성자 monk773
+-> https://blog.naver.com/monk773/90134151414
